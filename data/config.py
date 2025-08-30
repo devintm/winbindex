@@ -45,6 +45,7 @@ delta_machine_type_values_supported = {
 
 delta_data_without_rift_table_names = {
     '*.mui',
+    'stdole32.tlb',
 }
 delta_data_without_rift_table_manifests = {
     'amd64_microsoft-nxt-boottocloud-windows365-app_*',
