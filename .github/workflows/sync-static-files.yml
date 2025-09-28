@@ -32,9 +32,10 @@ jobs:
         run: |
           robocopy /job:RSYNC-STATIC-FILES || [ $? -lt 8 ]
       - name: Commit changes of static files
-        uses: EndBug/add-and-commit@v9
-        with:
-          cwd: data/gh-pages
-          default_author: github_actions
-          message: 'Sync static files'
-          fetch: false
+        run: |
+          cd data/gh-pages
+          git add .
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git diff-index --quiet HEAD || git commit -m "Sync static files"
+          git push
