@@ -14,6 +14,11 @@ updates_unsupported = {
     # ARM only.
     'KB5016138',
     'KB5016139',
+
+    # Windows Server only.
+    'KB5070881',
+    'KB5070882',
+    'KB5070883',
 }
 
 updates_alternative_links = {
