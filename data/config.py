@@ -72,14 +72,15 @@ file_hashes_unusual_section_alignment = {
     '09ced31cad8547a9ee5dcf739565def2f4359075e56a7b699cc85971e0905864': {'first_section_virtual_address': 0x310, 'section_alignment': 0x10},  # onnxruntime.dll
 }
 
-file_names_zero_timestamp = set()
+file_names_zero_timestamp = {
+    'microsoft.certificateservices.certenroll.interop.dll',
+}
 
 file_hashes_zero_timestamp = {
     '18dd945c04ce0fbe882cd3f234c2da2d0faa12b23bd6df7b1edc31faecf51c69',  # brlapi-0.8.dll
     '7a9113d00a274c075c58b22a3ebacf1754e7da7cfb4d3334b90367b602158d78',  # brltty.exe
     'ef5ea5d93b65a46dd43fa73bd4e74440ac88f7717052f5f780e7a71700d20a26',  # microsoft.ink.dll
     'de7c16afa5d0134036471fbb66133601db7c33d3742e202b1172c7270c5fd401',  # microsoft.ink.dll
-    'f3bf06c8f58692d48a80c85d8a234746567f94965a17add6d2c8eb2b521ed91f',  # microsoft.certificateservices.certenroll.interop.dll
 }
 
 file_hashes_small_non_signature_overlay = {
